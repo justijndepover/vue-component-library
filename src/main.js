@@ -1,8 +1,9 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Alert from './components/Alert';
 
-Vue.config.productionTip = false
+export default {
+    install (Vue) {
+        Vue.component('alert', Alert);
+    }
+}
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+export { Alert };

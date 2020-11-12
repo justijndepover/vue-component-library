@@ -1,3 +1,4 @@
-import OAlert from './components/Alert';
+import oAlert from './components/Alert';
+import oPage from './components/Page';
 
-export { OAlert };
+export { oAlert, oPage };

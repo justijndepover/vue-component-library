@@ -24,6 +24,7 @@ export default {
     },
     methods: {
         hide() {
+            this.$emit('close');
             this.show = false;
         },
     }

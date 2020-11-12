@@ -2,23 +2,27 @@
 
 ## Project setup
 ```
-npm install
+npm install justijndepover/vue-component-library
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+## Usage
+To prevent conflicts, all components have the prefix `o`
+```html
+<o-alert>Hi this is an alert</o-alert>
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### roadmap
+- [x] alert
+- [ ] button
+- [ ] dropdown
+- [ ] form-group
+- [ ] input
+- [ ] input-date
+- [ ] input-daterange
+- [ ] input-datetime
+- [ ] input-datetimerange
+- [ ] input-password
+- [ ] textarea
+- [ ] toast
+- [ ] switch
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

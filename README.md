@@ -1,4 +1,5 @@
 # vue-component-library
+Vue library with tailwind based components.
 
 ## Project setup
 ```
@@ -7,7 +8,10 @@ npm install justijndepover/vue-component-library
 
 ## Usage
 To prevent conflicts, all components have the prefix `o`
-```html
+
+```vue
+import { oAlert } from 'vue-component-library';
+
 <o-alert>Hi this is an alert</o-alert>
 ```
 
@@ -24,5 +28,4 @@ To prevent conflicts, all components have the prefix `o`
 - [ ] input-password
 - [ ] textarea
 - [ ] toast
-- [ ] switch
-
+- [x] switch

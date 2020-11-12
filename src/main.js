@@ -2,7 +2,7 @@ import Alert from './components/Alert';
 
 export default {
     install (Vue) {
-        Vue.component('alert', Alert);
+        Vue.component('o-alert', Alert);
     }
 }
 

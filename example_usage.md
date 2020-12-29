@@ -1,28 +1,28 @@
 ```vue
 <template>
-    <x-page loading="loading">
-        <x-card>
-            <x-card-body>
-                <x-form colspan="6">
-                    <x-field name="Naam">
-                        <x-text v-model="name"></x-text>
-                    </x-field>
+    <o-page loading="loading">
+        <o-card>
+            <o-card-body>
+                <o-form colspan="6">
+                    <o-field name="Naam">
+                        <o-text v-model="name"></o-text>
+                    </o-field>
 
-                    <x-field name="Straat" colspan="4">
-                        <x-text v-model="street"></x-text>
-                    </x-field>
+                    <o-field name="Straat" colspan="4">
+                        <o-text v-model="street"></o-text>
+                    </o-field>
 
-                    <x-field name="number" colspan="2">
-                        <x-text v-model="number"></x-text>
-                    </x-field>
-                </x-form>
-            </x-card-body>
+                    <o-field name="number" colspan="2">
+                        <o-text v-model="number"></o-text>
+                    </o-field>
+                </o-form>
+            </o-card-body>
 
-            <x-card-footer>
-                <x-button type="danger" size="small" @click="submit">Submit</x-button>
-            </x-card-footer>
-        </x-card>
-    </x-page>
+            <o-card-footer>
+                <o-button type="danger" size="small" @click="submit">Submit</o-button>
+            </o-card-footer>
+        </o-card>
+    </o-page>
 </template>
 
 <script>

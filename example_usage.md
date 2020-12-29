@@ -26,9 +26,9 @@
 </template>
 
 <script>
-import { xPage, xCard, xCardBody, xCardFooter, xForm, xField, xText } from 'vue-component-library';
+import { oPage, oCard, oCardBody, oCardFooter, oForm, oField, oText } from 'vue-component-library';
 export default {
-    components: { xPage, xCard, xCardBody, xCardFooter, xForm, xField, xText },
+    components: { oPage, oCard, oCardBody, oCardFooter, oForm, oField, oText },
     data() {
         return {
             name: { value: '', error: '' },

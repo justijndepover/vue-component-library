@@ -48,6 +48,9 @@ export default {
 
             return 'bg-green-200 text-green-500';
         }
-    }
+    },
+    beforeDestroy() {
+        this.$emit('destroy');
+    },
 };
 </script>

@@ -1,4 +1,4 @@
-import oAlert from './components/Alert';
+import oAlert from './components/Alert/Alert';
 import oCard from './components/Card/Card';
 import oCardBody from './components/Card/CardBody';
 import oCardFooter from './components/Card/CardFooter';

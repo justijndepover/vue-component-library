@@ -13,7 +13,8 @@ npm install justijndepover/vue-component-library
 To prevent conflicts, all components have the prefix `o`
 
 ```vue
-import { oAlert } from 'vue-component-library';
+import UI from 'vue-component-library';
+Vue.use(UI);
 
 <o-alert>Hi this is an alert</o-alert>
 ```
@@ -21,9 +22,9 @@ import { oAlert } from 'vue-component-library';
 ### roadmap
 
 -   [x] o-alert
--   [ ] o-button
+-   [x] o-button
 -   [ ] o-dropdown
--   [ ] o-field
+-   [x] o-field
 -   [ ] o-text
 -   [ ] o-email
 -   [ ] o-password

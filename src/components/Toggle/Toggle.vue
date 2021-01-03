@@ -14,6 +14,7 @@
 
 <script>
 export default {
+    name: 'o-toggle',
     props: {
         value: {
             type: Boolean,

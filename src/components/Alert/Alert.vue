@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'o-alert',
     props: {
         dismissable: {
             type: Boolean,

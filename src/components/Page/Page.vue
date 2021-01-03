@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'o-page',
     props: {
         loading: {
             default: false,

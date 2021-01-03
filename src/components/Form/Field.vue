@@ -7,6 +7,7 @@
 
 <script>
 export default {
+    name: 'o-field',
     props: {
         colspan: {
             type: Number,

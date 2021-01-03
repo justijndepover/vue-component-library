@@ -1,25 +1,11 @@
-import oAlert from './components/Alert/Alert';
-import oButton from './components/Button/Button';
-import oCard from './components/Card/Card';
-import oCardBody from './components/Card/CardBody';
-import oCardFooter from './components/Card/CardFooter';
-import oField from './components/Form/Field';
-import oForm from './components/Form/Form';
-import oModal from './components/Modal/Modal';
-import oPage from './components/Page/Page';
-import oPagination from './components/Pagination/Pagination';
-import oToggle from './components/Toggle/Toggle';
+import * as Components from './components';
 
-export {
-    oAlert,
-    oButton,
-    oCard,
-    oCardBody,
-    oCardFooter,
-    oField,
-    oForm,
-    oModal,
-    oPage,
-    oPagination,
-    oToggle,
+const UI = {
+    install(Vue) {
+        Object.values(Components).forEach((Component) => {
+            Vue.use(Component)
+        });
+    }
 };
+
+export default UI;

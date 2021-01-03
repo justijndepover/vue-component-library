@@ -28,6 +28,7 @@
 
 <script>
 export default {
+    name: 'o-modal',
     props: {
         dismiss: {
             type: String,

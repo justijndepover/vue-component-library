@@ -1,5 +1,10 @@
 <template>
-    <div v-if="show" class="p-4 rounded mb-4 flex items-center justify-between" :class="className" role="alert">
+    <div
+        v-if="show"
+        class="p-4 rounded mb-4 flex items-center justify-between"
+        :class="[ themes[theme] ]"
+        role="alert"
+    >
         <slot></slot>
         <div v-if="dismissable" class="cursor-pointer" @click="hide">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +22,7 @@ export default {
             type: Boolean,
             default: false,
         },
-        type: {
+        theme: {
             type: String,
             default: 'success',
         },
@@ -25,6 +30,14 @@ export default {
     data() {
         return {
             show: true,
+            themes: {
+                primary: 'bg-blue-200 text-blue-500',
+                secondary: 'bg-gray-200 text-gray-500',
+                info: 'bg-indigo-200 text-indigo-500',
+                success: 'bg-green-200 text-green-500',
+                warning: 'bg-yellow-200 text-yellow-600',
+                danger: 'bg-red-200 text-red-500',
+            },
         }
     },
     methods: {
@@ -32,23 +45,6 @@ export default {
             this.$emit('close');
             this.show = false;
         },
-    },
-    computed: {
-        className() {
-            if (this.type == 'danger') {
-                return 'bg-red-200 text-red-500';
-            }
-
-            if (this.type == 'warning') {
-                return 'bg-yellow-200 text-yellow-600';
-            }
-
-            if (this.type == 'info') {
-                return 'bg-blue-200 text-blue-500';
-            }
-
-            return 'bg-green-200 text-green-500';
-        }
     },
     beforeDestroy() {
         this.$emit('destroy');

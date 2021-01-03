@@ -1,6 +1,10 @@
 <template>
     <nav class="relative z-0 inline-flex shadow-sm -space-x-px" aria-label="Pagination">
-        <a href="#" @click="$emit('change', page - 1)" class="relative inline-flex items-center px-2 py-2 rounded-l-md border bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+        <a
+            @click="$emit('change', page - 1)"
+            class="relative inline-flex items-center px-2 py-2 rounded-l-md border cursor-pointer bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+            :disabled="page == 1"
+        >
             <span class="sr-only">Previous</span>
 
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -8,11 +12,20 @@
             </svg>
         </a>
 
-        <a href="#" v-for="pageId in totalPages" :key="pageId" @click="$emit('change', pageId)" class="relative inline-flex items-center px-4 py-2 border text-sm font-medium text-gray-700 hover:bg-gray-50" :class="page == pageId ? 'bg-gray-100' : 'bg-white'">
+        <a
+            v-for="pageId in totalPages"
+            :key="pageId"
+            @click="$emit('change', pageId)"
+            class="relative inline-flex items-center px-4 py-2 border cursor-pointer text-sm font-medium text-gray-700 hover:bg-gray-50"
+            :class="page == pageId ? 'bg-gray-100' : 'bg-white'"
+        >
             {{ pageId }}
         </a>
 
-        <a href="#" @click="$emit('change', page + 1)" class="relative inline-flex items-center px-2 py-2 rounded-r-md border bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+        <a
+            @click="$emit('change', page + 1)"
+            class="relative inline-flex items-center px-2 py-2 rounded-r-md border cursor-pointer bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+        >
             <span class="sr-only">Next</span>
 
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

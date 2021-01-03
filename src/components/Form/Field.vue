@@ -1,6 +1,6 @@
 <template>
     <div :class="'col-span-6 md:col-span-' + colspan">
-        <label class="text-sm font-medium text-gray-600 leading-5 mb-1 block" :for="id">{{ name }}</label>
+        <label class="text-sm font-medium text-gray-600 leading-5 mb-1 block" :for="forValue">{{ name }}</label>
         <slot></slot>
     </div>
 </template>
@@ -15,14 +15,19 @@ export default {
         name: {
             type: String,
         },
-        id: {
+        for: {
             type: String,
             default: '',
         }
     },
+    data() {
+        return {
+            forValue: this.for,
+        }
+    },
     created() {
-        if (this.id == '') {
-            this.id = this.name.toLowerCase().replace(' ', '_');
+        if (this.forValue == '') {
+            this.forValue = this.name.toLowerCase().replace(' ', '_');
         }
     }
 }

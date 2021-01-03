@@ -1,4 +1,5 @@
 import oAlert from './components/Alert/Alert';
+import oButton from './components/Button/Button';
 import oCard from './components/Card/Card';
 import oCardBody from './components/Card/CardBody';
 import oCardFooter from './components/Card/CardFooter';
@@ -11,6 +12,7 @@ import oToggle from './components/Toggle/Toggle';
 
 export {
     oAlert,
+    oButton,
     oCard,
     oCardBody,
     oCardFooter,

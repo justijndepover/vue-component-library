@@ -5,7 +5,7 @@ import oCardFooter from './components/Card/CardFooter';
 import oModal from './components/Modal/Modal';
 import oPage from './components/Page/Page';
 import oPagination from './components/Pagination/Pagination';
-import oToggle from './components/Toggle';
+import oToggle from './components/Toggle/Toggle';
 
 export {
     oAlert,

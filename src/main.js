@@ -8,4 +8,8 @@ const UI = {
     }
 };
 
+if (typeof window !== 'undefined' && window.Vue) {
+    window.Vue.use(UI);
+}
+
 export default UI;

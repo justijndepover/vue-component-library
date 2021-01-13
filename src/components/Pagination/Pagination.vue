@@ -37,7 +37,7 @@
 
 <script>
 export default {
-    name: 'o-pagination',
+    name: 'x-pagination',
     props: {
         page: {
             type: Number,

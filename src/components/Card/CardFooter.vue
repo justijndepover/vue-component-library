@@ -6,6 +6,6 @@
 
 <script>
 export default {
-    name: 'o-card-footer',
+    name: 'x-card-footer',
 }
 </script>

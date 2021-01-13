@@ -6,6 +6,6 @@
 
 <script>
 export default {
-    name: 'o-card',
+    name: 'x-card',
 }
 </script>

@@ -6,6 +6,6 @@
 
 <script>
 export default {
-    name: 'o-card-header',
+    name: 'x-card-header',
 }
 </script>

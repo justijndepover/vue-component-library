@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'o-form',
+    name: 'x-form',
     props: {
         colspan: {
             type: Number,

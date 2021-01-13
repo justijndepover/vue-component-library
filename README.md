@@ -10,29 +10,29 @@ npm install justijndepover/vue-component-library
 
 ## Usage
 
-To prevent conflicts, all components have the prefix `o`
+To prevent conflicts, all components have the prefix `x`
 
 ```vue
 import UI from 'vue-component-library';
 Vue.use(UI);
 
-<o-alert>Hi this is an alert</o-alert>
+<x-alert>Hi this is an alert</x-alert>
 ```
 
 ### roadmap
 
--   [x] o-alert
--   [x] o-button
--   [ ] o-dropdown
--   [x] o-field
--   [ ] o-text
--   [ ] o-email
--   [ ] o-password
--   [ ] o-date
--   [ ] o-datetime
--   [ ] o-daterange
--   [ ] o-input-datetimerange
--   [ ] o-textarea
--   [ ] o-editor
--   [x] o-toggle
--   [ ] o-color-picker
+-   [x] x-alert
+-   [x] x-button
+-   [ ] x-dropdown
+-   [x] x-field
+-   [ ] x-text
+-   [ ] x-email
+-   [ ] x-password
+-   [ ] x-date
+-   [ ] x-datetime
+-   [ ] x-daterange
+-   [ ] x-input-datetimerange
+-   [ ] x-textarea
+-   [ ] x-editor
+-   [x] x-toggle
+-   [ ] x-color-picker

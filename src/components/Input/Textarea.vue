@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'o-textarea',
+    name: 'x-textarea',
     props: {
 
     },

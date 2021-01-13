@@ -4,7 +4,7 @@
 
 <script>
 export default {
-    name: 'o-text',
+    name: 'x-text',
     props: {
 
     },

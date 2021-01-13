@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: 'o-button',
+    name: 'x-button',
     data() {
         return {
             themes: {

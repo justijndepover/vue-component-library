@@ -5,7 +5,14 @@ Vue library with tailwind based components.
 ## Project setup
 
 ```
-npm install justijndepover/vue-component-library
+npm install @justijndepover/vue-component-library
+```
+
+## PurgeCss
+
+This project doesn't export a css file. To make sure the classes aren't purged in production add the following path to your purge configuration:
+```
+'./node_modules/vue-component-library/src/**/*.vue'
 ```
 
 ## Usage

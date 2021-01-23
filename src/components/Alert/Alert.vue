@@ -1,7 +1,7 @@
 <template>
     <div
         v-if="show"
-        class="p-4 rounded mb-4 flex items-center justify-between"
+        class="p-4 rounded-md mb-4 flex items-center justify-between"
         :class="[ themes[theme] ]"
         role="alert"
     >
@@ -31,12 +31,12 @@ export default {
         return {
             show: true,
             themes: {
-                primary: 'bg-blue-200 text-blue-500',
-                secondary: 'bg-gray-200 text-gray-500',
-                info: 'bg-indigo-200 text-indigo-500',
-                success: 'bg-green-200 text-green-500',
-                warning: 'bg-yellow-200 text-yellow-600',
-                danger: 'bg-red-200 text-red-500',
+                primary: 'bg-blue-100 text-blue-700',
+                secondary: 'bg-gray-100 text-gray-700',
+                info: 'bg-indigo-100 text-indigo-700',
+                success: 'bg-green-100 text-green-700',
+                warning: 'bg-yellow-100 text-yellow-700',
+                danger: 'bg-red-100 text-red-700',
             },
         }
     },

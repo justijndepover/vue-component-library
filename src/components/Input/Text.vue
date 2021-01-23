@@ -23,6 +23,8 @@
                 </svg>
             </div>
         </div>
+
+        <p v-if="error.length" class="mt-2 text-sm text-red-600">{{ error }}</p>
     </div>
 </template>
 
@@ -62,8 +64,8 @@ export default {
         },
         error: {
             required: false,
-            type: String,
-            default: '',
+            type: [String, Boolean],
+            default: false,
         },
     },
     computed: {

@@ -32,14 +32,14 @@ Vue.use(UI);
 -   [x] x-button
 -   [ ] x-dropdown
 -   [x] x-field
--   [ ] x-text
+-   [x] x-text
 -   [ ] x-email
 -   [ ] x-password
 -   [ ] x-date
 -   [ ] x-datetime
 -   [ ] x-daterange
 -   [ ] x-input-datetimerange
--   [ ] x-textarea
+-   [x] x-textarea
 -   [ ] x-editor
 -   [x] x-toggle
 -   [ ] x-color-picker

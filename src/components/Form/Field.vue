@@ -15,6 +15,7 @@ export default {
         },
         name: {
             type: String,
+            default: '',
         },
         for: {
             type: String,

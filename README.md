@@ -37,9 +37,9 @@ Vue.use(UI);
 -   [x] x-email
 -   [x] x-password
 -   [ ] x-date
+-   [ ] x-time
 -   [ ] x-datetime
 -   [ ] x-daterange
--   [ ] x-input-datetimerange
 -   [x] x-textarea
 -   [ ] x-editor
 -   [ ] x-table

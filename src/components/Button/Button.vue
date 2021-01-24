@@ -6,11 +6,11 @@
         :type="type"
         :disabled="disabled"
     >
-        <x-icon v-if="icon && !iconRight && iconIf" :icon="icon" class="mr-2" :spin="iconSpin"></x-icon>
+        <x-icon v-if="icon && !iconRight && iconIf" :icon="icon" :class="this.$slots.default ? 'mr-2' : ''" :spin="iconSpin"></x-icon>
         <span>
             <slot></slot>
         </span>
-        <x-icon v-if="icon && iconRight && iconIf" :icon="icon" class="ml-2" :spin="iconSpin"></x-icon>
+        <x-icon v-if="icon && iconRight && iconIf" :icon="icon" :class="this.$slots.default ? 'ml-2' : ''" :spin="iconSpin"></x-icon>
     </button>
 </template>
 
@@ -30,9 +30,10 @@ export default {
                 transparent: 'text-gray-500 hover:bg-gray-200 active:bg-gray-200 focus:border-gray-300',
             },
             sizes: {
-                normal: 'py-1 px-3 text-sm',
-                small: 'py-1 px-2 text-xs',
-                large: 'py-2 px-4',
+                sm: 'py-1 px-2 text-xs',
+                xs: 'py-1 px-1 text-xs',
+                md: 'py-1 px-3 text-sm',
+                lg: 'py-2 px-4',
             },
         };
     },
@@ -58,7 +59,7 @@ export default {
         size: {
             required: false,
             type: String,
-            default: 'normal',
+            default: 'md',
         },
         disabled: {
             required: false,

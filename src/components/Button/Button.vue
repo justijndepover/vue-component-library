@@ -2,13 +2,15 @@
     <button
         @click="onClick($event)"
         class="inline-flex items-center justify-center border border-transparent leading-5 focus:outline-none font-medium rounded-md transition duration-150 ease-in-out appearance-none"
-        :class="[ themes[theme], sizes[size] ]"
+        :class="[ colors[color], sizes[size] ]"
         :type="type"
         :disabled="disabled"
     >
+        <x-icon v-if="icon && !iconRight && iconIf" :icon="icon" class="mr-2" :spin="iconSpin"></x-icon>
         <span>
             <slot></slot>
         </span>
+        <x-icon v-if="icon && iconRight && iconIf" :icon="icon" class="ml-2" :spin="iconSpin"></x-icon>
     </button>
 </template>
 
@@ -17,7 +19,7 @@ export default {
     name: 'x-button',
     data() {
         return {
-            themes: {
+            colors: {
                 default: 'text-white bg-red-600 hover:bg-red-700 active:bg-red-700 focus:border-red-700',
                 primary: 'text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-600 focus:border-blue-600',
                 secondary: 'text-white bg-gray-500 hover:bg-gray-600 active:bg-gray-600 focus:border-gray-600',
@@ -48,7 +50,7 @@ export default {
             required: false,
             type: String,
         },
-        theme: {
+        color: {
             required: false,
             type: String,
             default: 'default',
@@ -62,6 +64,26 @@ export default {
             required: false,
             type: Boolean,
             default: false,
+        },
+        icon: {
+            required: false,
+            type: String,
+            default: '',
+        },
+        iconRight: {
+            required: false,
+            type: Boolean,
+            default: false,
+        },
+        iconSpin: {
+            required: false,
+            type: Boolean,
+            default: false,
+        },
+        iconIf: {
+            required: false,
+            type: Boolean,
+            default: true,
         },
     },
     methods: {

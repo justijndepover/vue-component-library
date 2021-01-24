@@ -33,8 +33,8 @@ Vue.use(UI);
 -   [ ] x-dropdown
 -   [x] x-field
 -   [x] x-text
--   [ ] x-email
--   [ ] x-password
+-   [x] x-email
+-   [x] x-password
 -   [ ] x-date
 -   [ ] x-datetime
 -   [ ] x-daterange

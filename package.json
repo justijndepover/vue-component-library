@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "build-lib": "vue-cli-service build --target lib --name vue-component-library src/main.js",
     "lint": "vue-cli-service lint",
-    "new:component": "sh scripts/newComponent.sh"
+    "new:component": "node scripts/new-component.js",
+    "heroicons": "node scripts/import-heroicons.js"
   },
   "main": "./dist/vue-component-library.common.js",
   "files": [
@@ -28,6 +29,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "heroicons": "^0.4.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

@@ -31,6 +31,7 @@ Vue.use(UI);
 -   [x] x-alert
 -   [x] x-button
 -   [ ] x-dropdown
+-   [x] x-select
 -   [x] x-field
 -   [x] x-text
 -   [x] x-email
@@ -41,5 +42,6 @@ Vue.use(UI);
 -   [ ] x-input-datetimerange
 -   [x] x-textarea
 -   [ ] x-editor
+-   [ ] x-table
 -   [x] x-toggle
 -   [ ] x-color-picker

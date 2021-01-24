@@ -4,7 +4,7 @@
 
         <div class="relative rounded-md shadow-sm" :class="label ? 'mt-1' : ''">
             <input
-                type="text"
+                :type="type"
                 :id="idComputed"
                 :name="name"
                 :placeholder="placeholder"
@@ -39,6 +39,10 @@ export default {
         value: {
             type: [String, Number],
             default: '',
+        },
+        type: {
+            type: String,
+            default: 'text',
         },
         required: {
             type: Boolean,

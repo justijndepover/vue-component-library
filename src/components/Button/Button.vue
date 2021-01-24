@@ -20,13 +20,15 @@ export default {
     data() {
         return {
             colors: {
-                default: 'text-white bg-red-600 hover:bg-red-700 active:bg-red-700 focus:border-red-700',
-                primary: 'text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-600 focus:border-blue-600',
-                secondary: 'text-white bg-gray-500 hover:bg-gray-600 active:bg-gray-600 focus:border-gray-600',
-                info: 'text-white bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-600 focus:border-indigo-600',
-                success: 'text-white bg-green-500 hover:bg-green-600 active:bg-green-600 focus:border-green-600',
-                warning: 'text-white bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-600 focus:border-yellow-600',
-                danger: 'text-white bg-red-500 hover:bg-red-600 active:bg-red-600 focus:border-red-600',
+                default: 'text-white bg-red-500 hover:bg-red-600 active:bg-red-600 focus:border-red-600',
+                gray: 'text-white bg-gray-500 hover:bg-gray-600 active:bg-gray-600 focus:border-gray-600',
+                red: 'text-white bg-red-500 hover:bg-red-600 active:bg-red-600 focus:border-red-600',
+                yellow: 'text-white bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-600 focus:border-yellow-600',
+                green: 'text-white bg-green-500 hover:bg-green-600 active:bg-green-600 focus:border-green-600',
+                blue: 'text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-600 focus:border-blue-600',
+                indigo: 'text-white bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-600 focus:border-indigo-600',
+                purple: 'text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-600 focus:border-purple-600',
+                pink: 'text-white bg-pink-500 hover:bg-pink-600 active:bg-pink-600 focus:border-pink-600',
                 transparent: 'text-gray-500 hover:bg-gray-200 active:bg-gray-200 focus:border-gray-300',
             },
             sizes: {

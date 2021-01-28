@@ -30,7 +30,7 @@
 
 <script>
 export default {
-    name: 'x-select',
+    name: 'x-select-native',
     props: {
         id: String,
         name: String,

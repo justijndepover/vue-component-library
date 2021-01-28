@@ -10,7 +10,7 @@ npm install @justijndepover/vue-component-library
 
 ## PurgeCss
 
-This project doesn't export a css file. To make sure the classes aren't purged in production add the following path to your purge configuration:
+This project doesn't export a css file, because the components use default tailwind classes. To make sure the classes aren't purged in production add the following path to your purge configuration:
 ```
 './node_modules/vue-component-library/src/**/*.vue'
 ```
@@ -31,11 +31,14 @@ Vue.use(UI);
 -   [x] x-alert
 -   [x] x-button
 -   [ ] x-dropdown
--   [x] x-select
--   [x] x-field
+-   [x] x-select-native
+-   [ ] x-select
+-   [ ] x-grid
 -   [x] x-text
 -   [x] x-email
 -   [x] x-password
+-   [ ] x-file
+-   [ ] x-files
 -   [ ] x-date
 -   [ ] x-time
 -   [ ] x-datetime

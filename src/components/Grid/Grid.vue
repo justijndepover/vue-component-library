@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'x-form',
+    name: 'x-grid',
     props: {
         colspan: {
             type: Number,

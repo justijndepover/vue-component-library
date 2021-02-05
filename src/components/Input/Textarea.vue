@@ -18,7 +18,8 @@
                 :class="error ? 'pr-10 border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500' : 'pr-3 border-gray-300 text-gray-800 focus:ring-blue-400 focus:border-blue-400 placeholder-gray-400'"></textarea>
         </div>
 
-        <p v-if="error.length" class="mt-2 text-sm text-red-600">{{ error }}</p>
+        <p v-if="Array.isArray(error) && error.length" class="mt-2 text-sm text-red-600">{{ error[0] }}</p>
+        <p v-else-if="error.length" class="mt-2 text-sm text-red-600">{{ error }}</p>
     </div>
 </template>
 
@@ -58,7 +59,7 @@ export default {
         },
         error: {
             required: false,
-            type: [String, Boolean],
+            type: [Array, String, Boolean],
             default: false,
         },
     },

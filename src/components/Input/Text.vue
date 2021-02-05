@@ -24,7 +24,8 @@
             </div>
         </div>
 
-        <p v-if="error.length" class="mt-2 text-sm text-red-600">{{ error }}</p>
+        <p v-if="Array.isArray(error) && error.length" class="mt-2 text-sm text-red-600">{{ error[0] }}</p>
+        <p v-else-if="error.length" class="mt-2 text-sm text-red-600">{{ error }}</p>
     </div>
 </template>
 
@@ -68,7 +69,7 @@ export default {
         },
         error: {
             required: false,
-            type: [String, Boolean],
+            type: [Array, String, Boolean],
             default: false,
         },
     },

@@ -33,7 +33,7 @@ Vue.use(UI);
 -   [ ] x-dropdown
 -   [x] x-select-native
 -   [ ] x-select
--   [ ] x-grid
+-   [x] x-grid
 -   [x] x-text
 -   [x] x-email
 -   [x] x-password

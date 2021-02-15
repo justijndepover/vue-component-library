@@ -57,6 +57,11 @@ export default {
             type: [String, Number],
             default: 10,
         },
+        cols: {
+            required: false,
+            type: [String, Number],
+            default: 30,
+        },
         error: {
             required: false,
             type: [Array, String, Boolean],

@@ -18,9 +18,7 @@
             </select>
 
             <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-                <svg class="h-5 w-5" :class="error ? 'text-red-500' : 'text-gray-500'" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                </svg>
+                <x-icon icon="chevron-down" size="5" :class="error ? 'text-red-500' : 'text-gray-500'" />
             </div>
         </div>
 

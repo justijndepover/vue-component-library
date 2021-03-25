@@ -5,8 +5,8 @@
 </x-dropdown>
 
 <!-- dropdown with avatar -->
-<x-dropdown>
-    <x-avatar :src="user.avatar" :fallback="user.initials" #default> <!-- put it in the default slot -->
+<x-avatar :src="user.avatar" :fallback="user.initials" for="dropdown"> <!-- for should point to the id -->
+<x-dropdown id="dropdown"> <!-- No label is passed, so nothing renders -->
     <x-dropdown-item icon="user">Gebruikers</x-dropdown-item>
     <x-dropdown-item icon="logout">Uitloggen</x-dropdown-item>
 </x-dropdown>

@@ -40,6 +40,11 @@ export default {
             this.checked = !this.checked;
             this.$emit('input', this.checked);
         }
+    },
+    watch: {
+        value(newValue) {
+            this.checked = newValue;
+        },
     }
 }
 </script>

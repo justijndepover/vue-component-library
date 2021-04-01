@@ -1,6 +1,7 @@
 export { default as Alert } from './Alert';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
+export { default as Checkbox } from './Checkbox';
 export { default as Date } from './Date';
 export { default as Grid } from './Grid';
 export { default as Icon } from './Icon';

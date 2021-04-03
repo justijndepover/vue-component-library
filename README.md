@@ -30,6 +30,8 @@ Vue.use(UI);
 
 -   [x] x-alert
 -   [x] x-button
+-   [x] x-checkbox
+-   [ ] x-radio
 -   [ ] x-dropdown
 -   [x] x-select-native
 -   [ ] x-select

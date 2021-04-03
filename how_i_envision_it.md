@@ -34,12 +34,6 @@
 <x-radio label="optie 3" />
 <x-radio label="optie 4" />
 
-<x-label>Kies uw waarden in de lijst met checkboxen</x-label>
-<x-checkbox label="optie 1" />
-<x-checkbox label="optie 2" />
-<x-checkbox label="optie 3" />
-<x-checkbox label="optie 4" />
-
 <!-- tabs -->
 <x-tabs>
 

@@ -10,6 +10,7 @@
                 @keydown.down="onButtonClick"
                 @keydown.up="onButtonClick"
                 @click="onButtonClick"
+                v-click-outside="onClickOutside"
                 aria-haspopup="listbox"
                 :aria-expanded="open"
                 aria-labelledby="listbox-label"
@@ -123,6 +124,9 @@ export default {
             this.open = false;
             this.$refs.button.focus();
         },
+        onClickOutside() {
+            this.open = false;
+        },
         onEscape() {
             this.open = false;
             this.$refs.button.focus();
@@ -137,16 +141,19 @@ export default {
         },
     },
     watch: {
-        // selected() {
-        //     if (!this.open) return;
+        selected() {
+            if (!this.open) return;
 
-        //     if (this.selected === null) {
-        //         this.activeDescendant = '';
-        //         return;
-        //     }
+            if (this.selected === null) {
+                this.activeDescendant = '';
+                return;
+            }
 
-        //     this.activeDescendant = this.$refs.listbox.children[this.selected].id;
-        // }
+            if (this.$refs.listbox.children[this.selected]) {
+                console.log(this.selected);
+                this.activeDescendant = this.$refs.listbox.children[this.selected].id;
+            }
+        }
     },
     computed: {
         idComputed() {

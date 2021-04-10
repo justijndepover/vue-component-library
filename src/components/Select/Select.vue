@@ -17,9 +17,7 @@
                 :autofocus="autofocus"
                 class="relative appearance-none bg-white border outline-none focus:outline-none focus:ring-1 ring-offset-0 block w-full pl-3 pr-10 py-2 sm:text-sm text-base leading-normal rounded-md shadow-sm text-left cursor-default"
                 :class="error ? 'border-red-300 text-red-900 placeholder-red-300 focus:outline-none focus:ring-red-500 focus:border-red-500' : 'border-gray-300 text-gray-800 focus:ring-blue-400 focus:border-blue-400 placeholder-gray-400'">
-                <span class="flex items-center">
-                    <span class="block truncate">{{ getContentValue }}</span>
-                </span>
+                <div class="flex items-center" v-html="getContentValue"></div>
 
                 <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none z-50">
                     <x-icon icon="chevron-down" size="5" :class="error ? 'text-red-500' : 'text-gray-500'" />
@@ -162,7 +160,13 @@ export default {
             return this.options[this.selected];
         },
         getContentValue() {
-            return 'xxx',
+            const selected = this.options.indexOf(this.value);
+
+            if (this.$refs.listbox) {
+                return this.$refs.listbox.children[selected].children[0].innerHTML;
+            }
+
+            return '';
         },
     },
 }

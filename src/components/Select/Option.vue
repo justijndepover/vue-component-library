@@ -25,5 +25,8 @@ export default {
             default: null,
         },
     },
+    mounted() {
+        this.$parent.reload();
+    },
 };
 </script>

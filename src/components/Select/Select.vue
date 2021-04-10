@@ -96,6 +96,12 @@ export default {
         });
     },
     methods: {
+        reload() {
+            this.optionCount = this.$refs.listbox.children.length;
+            this.options = Array.from(this.$refs.listbox.children).map((child) => {
+                return child.getAttribute('name');
+            });
+        },
         choose(option) {
             this.open = false;
             this.$emit('input', option);
@@ -114,7 +120,9 @@ export default {
 
             this.$nextTick(() => {
                 this.$refs.listbox.focus();
-                this.$refs.listbox.children[this.selected].scrollIntoView({ block: 'nearest' });
+                if (this.$refs.listbox.children[this.selected]) {
+                    this.$refs.listbox.children[this.selected].scrollIntoView({ block: 'nearest' });
+                }
             })
         },
         onOptionSelect() {
@@ -162,8 +170,16 @@ export default {
         getContentValue() {
             const selected = this.options.indexOf(this.value);
 
-            if (this.$refs.listbox) {
-                return this.$refs.listbox.children[selected].children[0].innerHTML;
+            try {
+                return this.$refs.listbox.children[selected].children[0].innerHTML
+            } catch (error) {
+                //
+            }
+
+            try {
+                return this.$refs.listbox.children[0].children[0].innerHTML
+            } catch (error) {
+                //
             }
 
             return '';
